@@ -1,0 +1,434 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.container{   
+    position:fixed;
+    width:900px;
+    height:500px;
+    background-repeat: no-repeat;
+    top:100px;
+    left:350px;
+    border:1px solid gray;
+    border-radius: 10px;
+    overflow:hidden;
+    
+}
+.image{
+    width:100%;
+    border-radius: 10px;
+}
+.traffic{
+    position:absolute;
+    left:832px;
+    top:130px;
+    height:243px;
+    width: 55px;
+}
+
+.traffic .box{    
+    height:100px;
+    width: 55px;
+    background-color:black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.traffic .leg{
+    position:absolute;
+    left:22px;
+    height:120px;
+    width: 10px;
+    background-color: black;
+    
+}
+
+.circle{
+    height:30px;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+#red{
+    background-color: rgb(120, 37, 37);
+    animation-name: light;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    
+}
+@keyframes light{
+    from{
+        background-color: rgb(120, 37, 37);
+    }
+    to{
+        background-color: red;
+    }
+}
+
+#yellow{
+    background-color: rgb(108, 92, 43);
+    animation-name: light2;
+    animation-duration: 1s;
+    animation-delay: 6s;
+    
+}
+
+@keyframes light2{
+    from{
+        background-color: rgb(108, 92, 43);
+    }
+    to{
+        background-color: rgba(217, 217, 117, 0.997);
+    }
+}
+
+#green{
+    background-color: green;
+    animation-name: light3;
+    animation-duration:5s;
+    animation-delay: 6.2s;
+    
+}
+
+@keyframes light3{
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: rgb(85, 221, 75);
+    }
+}
+.person{
+    position:absolute;
+    top:270px;
+    left:-120px;
+    height:270px;
+    width: 120px;
+    animation-name: move;
+    animation-duration:6s;
+    animation-delay:0s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move{
+    0%{
+        top:270px;
+        left:-120px;
+        height:270px;
+        width: 120px;
+
+    }
+    50%{
+        top:270px;
+        left:209px;
+        height:300px;
+        width: 140px;
+
+    }
+    100%{
+        top:90px;
+        left:209px;
+        height:300px;
+        width: 140px;
+    }
+}
+
+
+.person .head{
+    position:absolute;
+    top:20px;
+    left:34px;
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    background-color:rgb(237, 200, 156); 
+    animation-name: head;
+    animation-duration:3s;
+    animation-delay:2s;
+    animation-fill-mode: forwards;   
+}
+
+.person .body{
+    position:absolute;
+    top:70px;
+    left:21px;
+    height:88px;
+    width:80px;
+    border-radius:20%;
+    background-color:rgb(57, 38, 140); 
+    animation-name: body;
+    animation-duration:3s;
+    animation-delay:2s;
+    animation-fill-mode: forwards;    
+}
+
+.person .arms .left-arm{
+    position:absolute;
+    top:76px;
+    left:10px;
+    height:78px;
+    width:10px;
+    border-radius:43%;
+    background-color:rgb(237, 200, 156);  
+    animation-name:  left-arm;
+    animation-duration:3s;
+    animation-delay:2s;
+    animation-fill-mode: forwards;  
+    
+}
+
+.person .arms .right-arm{
+    position:absolute;
+    top:76px;
+    left:102px;
+    height:78px;
+    width:10px;
+    border-radius:43%;
+    background-color:rgb(237, 200, 156);  
+    animation-name:  right-arm;
+    animation-duration:3s;
+    animation-delay:2s;
+    animation-fill-mode: forwards; 
+    
+}
+
+.person .legs .left-leg{
+    position:absolute;
+    top:158px;
+    left:42px;
+    height:78px;
+    width:10px;
+    border-radius:43%;
+    background-color:rgb(237, 200, 156); 
+    animation-name:  left-leg;
+    animation-duration:3s;
+    animation-delay:2s;
+    animation-fill-mode: forwards; 
+    
+}
+
+.person .legs .right-leg{
+    position:absolute;
+    top:158px;
+    left:72px;
+    height:78px;
+    width:10px;
+    border-radius:43%;
+    background-color:rgb(237, 200, 156); 
+    animation-name:  right-leg;
+    animation-duration:3s;
+    animation-delay:2s;
+    animation-fill-mode: forwards; 
+}
+
+
+@keyframes head{
+    from{
+        height:50px;
+        width:50px;
+        top:20px;
+
+    }
+    to{
+        
+        height:55px;
+        width:55px;
+        top:15px;
+        
+    }
+}
+
+@keyframes body{
+    from{
+        
+        height:88px;
+    width:80px;
+
+    }
+    to{
+        
+        height:93px;
+        width:85px;
+    }
+}
+
+@keyframes left-arm{
+    from{
+        
+        height:78px;
+        width:10px;
+        left:10px;
+
+    }
+    to{
+        
+        height:83px;
+        width:13px;
+        left:7px;
+    }
+}
+
+@keyframes right-arm{
+    from{
+        
+        left:102px;
+        height:78px;
+        width:10px;
+
+    }
+    to{
+        
+        left:107px;
+        height:83px;
+        width:13px;
+    }
+}
+
+@keyframes left-leg{
+    from{  
+        height:78px;
+        width:10px;
+        top:158px;
+
+    }
+    to{
+        height:83px;
+        width:13px;
+        top:163px;
+    }
+}
+
+@keyframes right-leg{
+    from{  
+        height:78px;
+        width:10px;
+        top:158px;
+
+    }
+    to{
+        height:83px;
+        width:13px;
+        top:163px;
+    }
+}
+
+.car{
+    position:absolute;
+    left:900px;
+    top:258px;
+    height:225px;
+    width: 355px;
+    animation-name:  car-move;
+    animation-duration:16s;
+    animation-delay:-0.5s;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes car-move{
+    0%{
+        left:900px;
+
+    }
+    50%{
+        left:480px;
+
+    }
+    100%{
+        left:-400px;
+        
+    }
+}
+
+.car .body1{
+    position:absolute;
+    left:15px;
+    top:95px;
+    height:75px;
+    width: 330px;
+    border-radius:21px;
+    background-color:red;
+}
+
+.car .body2{
+    position:absolute;
+    left:47px;
+    top:41px;
+    height:55px;
+    width: 265px;
+    border-top-left-radius:21px;
+    border-top-right-radius:21px;
+    background-color:red;
+}
+
+.car .windows .left-window{
+    position:absolute;
+    left:10px;
+    top:10px;
+    height:38px;
+    width: 115px;
+    border-radius:11px;
+    background-color:rgb(94, 15, 15);
+    border:3px solid gray;
+    z-index: 1;
+
+}
+
+
+.car .windows .right-window{
+    position:absolute;
+    right:10px;
+    top:10px;
+    height:38px;
+    width: 115px;
+    border-radius:11px;
+    background-color:rgb(94, 15, 15);
+    border:3px solid gray;
+    z-index: 1;
+
+}
+
+.car .wheels .left-wheel{
+    position:absolute;
+    left:60px;
+    top:160px;
+    height:45px;
+    width: 45px;
+    border-radius:50%;
+    background-color:rgb(94, 15, 15);
+    border:3px dashed gray;
+    animation-name:wheel-rotate;
+    animation-duration:16s;
+    animation-delay:-0.5s;
+    animation-fill-mode: forwards; 
+    
+}
+
+.car .wheels .right-wheel{
+    position:absolute;
+    left:252px;
+    top:160px;
+    height:45px;
+    width: 45px;
+    border-radius:50%;
+    background-color:rgb(94, 15, 15);
+    border:3px dashed gray;
+    animation-name:wheel-rotate;
+    animation-duration:16s;
+    animation-delay:-0.5s;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes wheel-rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+
+
+
+
+
